@@ -2,11 +2,11 @@ repo_name: stackshareio/pom-manipulation-ext
 report_id: 0a8dd4aec0c627ab9efb200c22d1a254
 version: 0.1
 repo_type: Public
-timestamp: '2024-03-06T15:28:07+00:00'
+timestamp: '2024-03-07T07:51:59+00:00'
 requested_by: huzefab
 provider: github
 branch: main
-detected_tools_count: 6
+detected_tools_count: 59
 tools:
 - name: Groovy
   description: A multi-faceted language for the Java platform
@@ -33,6 +33,19 @@ tools:
   detection_source: Repo Metadata
   last_updated_by: Nick Cross
   last_updated_on: 2022-05-17 08:21:38.000000000 Z
+- name: Apache Maven
+  description: Apache build manager for Java projects.
+  website_url: http://maven.apache.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/package_manager/977/default_9833f2ef0bbc2a946b4cc5e9307264033361076b.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/pom.xml
+  detection_source: integration-test/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2021-11-29 17:04:11.000000000 Z
 - name: Codecov
   description: Hosted coverage reports with awesome features to enhance your CI workflow
   website_url: https://codecov.io/
@@ -67,6 +80,20 @@ tools:
   detection_source: ".github/workflows/maven.yml"
   last_updated_by: David Walluck
   last_updated_on: 2021-10-06 18:09:38.000000000 Z
+- name: JUnit
+  description: A programmer-oriented testing framework for Java
+  website_url: http://junit.org/
+  version: 3.8.1
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2020/874086.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/ai-parent-child-inherit/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2015-07-14 13:20:33.000000000 Z
 - name: Logback
   description: A logging framework for Java applications
   website_url: https://logback.qos.ch/
@@ -75,7 +102,630 @@ tools:
   category: Monitoring
   sub_category: Log Management
   image_url: https://img.stackshare.io/service/2923/05518ecaa42841e834421e9d6987b04f_400x400.png
-  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/src/main/resources/logback.xml
-  detection_source: cli/src/main/resources/logback.xml
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
   last_updated_by: Nick Cross
-  last_updated_on: 2018-10-21 18:05:52.000000000 Z
+  last_updated_on: 2015-11-27 14:44:01.000000000 Z
+- name: Mockito
+  description: Tasty mocking framework for unit tests in Java
+  website_url: https://site.mockito.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2021/4y634TJm_400x400.jpg
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/project-inheritance/pom.xml
+  detection_source: integration-test/src/it/project-inheritance/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2017-09-21 22:08:03.000000000 Z
+- name: SLF4J
+  description: Simple logging facade for Java
+  website_url: http://slf4j.org/
+  open_source: false
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Log Management
+  image_url: https://img.stackshare.io/service/2805/05518ecaa42841e834421e9d6987b04f_400x400.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/annotation/pom.xml
+  detection_source: annotation/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-01-10 13:38:47.000000000 Z
+- name: xmlunit
+  website_url: https://www.xmlunit.org/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/9143/no-img-open-source.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/core/pom.xml
+  detection_source: core/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2016-04-18 19:59:57.000000000 Z
+- name: ch.qos.logback:logback-classic
+  description: Logback-classic module
+  license: EPL-1.0,LGPL-2.1+
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2018-04-10 15:55:30.000000000 Z
+- name: ch.qos.logback:logback-core
+  description: Logback-core module
+  license: EPL-1.0,LGPL-2.1+
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2019-08-14 20:51:56.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-annotations
+  description: Core annotations used for value types
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/common/pom.xml
+  detection_source: common/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-09-25 13:43:55.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-core
+  description: Core Jackson processing abstractions
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/common/pom.xml
+  detection_source: common/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2019-10-08 09:37:19.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-databind
+  description: 'General data-binding functionality for Jackson: works on core streaming
+    API'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/common/pom.xml
+  detection_source: common/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2019-10-08 09:37:19.000000000 Z
+- name: com.github.stefanbirkner:system-rules
+  description: A collection of JUnit rules for testing code which uses java.lang.System
+  license: CPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2022-11-22 11:54:47.000000000 Z
+- name: com.google.inject:guice
+  description: Guice is a lightweight dependency injection framework for Java 6 and
+    above
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2022-11-22 11:54:47.000000000 Z
+- name: com.jayway.jsonpath:json-path
+  description: Java port of Stefan Goessner JsonPath
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/core/pom.xml
+  detection_source: core/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2018-10-08 12:03:14.000000000 Z
+- name: com.squareup:javapoet
+  description: Use beautiful Java code to generate beautiful Java code
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/annotation/pom.xml
+  detection_source: annotation/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-03-25 14:55:25.000000000 Z
+- name: com.yammer.metrics:metrics-core
+  description: Artifactory auto generated POM
+  version: 2.2.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/remote-dependency-management-child-module-standalone-override-transitive/child/pom.xml
+  detection_source: integration-test/src/it/remote-dependency-management-child-module-standalone-override-transitive/child/pom.xml
+  last_updated_by: David Walluck
+  last_updated_on: 2021-11-30 11:10:18.000000000 Z
+- name: commons-codec:commons-codec
+  description: The Apache Commons Codec package contains simple encoder and decoders
+    for various formats such as Base64 and Hexadecimal
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/project-inheritance/common/config/pom.xml
+  detection_source: integration-test/src/it/project-inheritance/common/config/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2017-09-21 22:08:03.000000000 Z
+- name: commons-configuration:commons-configuration
+  description: Tools to assist in the reading of configuration/preferences files in
+    various formats
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/project-inheritance/common/config/pom.xml
+  detection_source: integration-test/src/it/project-inheritance/common/config/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2017-09-29 12:48:54.000000000 Z
+- name: commons-httpclient:commons-httpclient
+  description: The HttpClient component supports the client-side of RFC 1945
+  version: '3.1'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/depmgmt-strict-mode-exact-existing-rebuild/pom.xml
+  detection_source: integration-test/src/it/depmgmt-strict-mode-exact-existing-rebuild/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2018-04-26 15:48:39.000000000 Z
+- name: commons-io:commons-io
+  description: The Apache Commons IO library contains utility classes
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/annotation/pom.xml
+  detection_source: annotation/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-01-10 13:38:47.000000000 Z
+- name: commons-lang:commons-lang
+  description: Commons Lang
+  version: '2.6'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/depmgmt-strict-mode-exact/child/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2019-08-14 20:51:56.000000000 Z
+- name: commons-logging:commons-logging
+  description: Apache Commons Logging is a thin adapter allowing configurable bridging
+    to other
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/ext/pom.xml
+  detection_source: ext/pom.xml
+  last_updated_by: David Walluck
+  last_updated_on: 2020-04-29 20:27:00.000000000 Z
+- name: commons-net:commons-net
+  description: Apache Commons Net library contains a collection of network utilities
+    and protocol implementations
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/remote-dependency-management-embedded-props-strict-ignoresuffix/pom.xml
+  detection_source: integration-test/src/it/remote-dependency-management-embedded-props-strict-ignoresuffix/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2018-04-26 15:48:39.000000000 Z
+- name: info.picocli:picocli
+  description: Java command line parser with both an annotations API and a programmatic
+    API
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-10-05 21:43:33.000000000 Z
+- name: io.swagger:swagger-annotations
+  description: Examples and server integrations for generating the Swagger API Specification
+  version: 1.5.7
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/project-inheritance/pom.xml
+  detection_source: integration-test/src/it/project-inheritance/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2018-01-03 11:07:21.000000000 Z
+- name: javax.inject:javax.inject
+  description: The javax.inject API
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/core/pom.xml
+  detection_source: core/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-01-13 10:34:51.000000000 Z
+- name: junit:junit
+  description: JUnit is a unit testing framework for Java
+  version: 3.8.1
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/ai-parent-child-inherit/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.apache.ivy:ivy
+  description: POM was created by Sonatype Nexus
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.apache.maven.release:maven-release-manager
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/ext/pom.xml
+  detection_source: ext/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2021-11-29 17:04:11.000000000 Z
+- name: org.apache.maven:apache-maven
+  description: The Apache Maven distribution
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/pom.xml
+  detection_source: integration-test/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2021-11-29 17:04:11.000000000 Z
+- name: org.apache.maven:maven-artifact
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2022-11-22 11:54:47.000000000 Z
+- name: org.apache.maven:maven-compat
+  description: Maven classes maintained as compatibility layer for tools done with
+    Maven 2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.apache.maven:maven-core
+  description: Maven Core classes
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.apache.maven:maven-model
+  description: Model for Maven POM
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.apache.maven:maven-model-builder
+  description: The effective model builder
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.apache.maven:maven-settings
+  description: Maven Settings model
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.apache.maven:maven-settings-builder
+  description: The effective settings builder
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.codehaus.groovy:groovy
+  description: 'Groovy: A powerful, dynamic language for the JVM'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/core/pom.xml
+  detection_source: core/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-09-30 12:58:00.000000000 Z
+- name: org.codehaus.groovy:groovy-json
+  description: 'Groovy: A powerful, dynamic language for the JVM'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/core/pom.xml
+  detection_source: core/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-09-30 12:58:00.000000000 Z
+- name: org.codehaus.groovy:groovy-xml
+  description: 'Groovy: A powerful, dynamic language for the JVM'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.codehaus.plexus:plexus-interpolation
+  description: The Plexus project provides a full software stack for creating and
+    executing software projects
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.codehaus.plexus:plexus-utils
+  description: A collection of various utility classes to ease working with strings
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/common/pom.xml
+  detection_source: common/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2022-02-02 10:02:48.000000000 Z
+- name: org.eclipse.aether:aether-api
+  description: The application programming interface for the repository system
+  license: EPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.eclipse.jetty:jetty-server
+  description: The core jetty server artifact
+  license: Apache-2.0,EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/core/pom.xml
+  detection_source: core/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-09-30 12:58:00.000000000 Z
+- name: org.eclipse.sisu:org.eclipse.sisu.plexus
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.hamcrest:hamcrest-all
+  description: A self-contained hamcrest jar containing all of the sub-modules in
+    a single artifact
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/common/pom.xml
+  detection_source: common/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2022-02-02 10:02:48.000000000 Z
+- name: org.jboss.byteman:byteman-bmunit
+  description: The Byteman bmunit jar provides integration of Byteman into TestNG
+    and JUnit tests
+  license: LGPL-2.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/cli/pom.xml
+  detection_source: cli/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-12-01 12:56:39.000000000 Z
+- name: org.jdom:jdom2
+  description: A complete
+  license: zlib-acknowledgement
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/common/pom.xml
+  detection_source: common/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2022-02-02 10:02:48.000000000 Z
+- name: org.mockito:mockito-all
+  description: Mock objects library for java
+  version: 1.9.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/project-inheritance/pom.xml
+  detection_source: integration-test/src/it/project-inheritance/pom.xml
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-11-21 17:36:13.000000000 Z
+- name: org.projectlombok:lombok
+  description: 'Spice up your java: Automatic Resource Management'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/common/pom.xml
+  detection_source: common/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2022-02-02 10:02:48.000000000 Z
+- name: org.slf4j:slf4j-api
+  description: The slf4j API
+  version: 1.7.30
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/integration-test/src/it/inline-property-managed-plugin-section/pom.xml
+  detection_source: annotation/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-03-25 14:55:25.000000000 Z
+- name: org.xmlunit:xmlunit-core
+  description: XMLUnit for Java
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/core/pom.xml
+  detection_source: core/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-09-30 12:58:00.000000000 Z
+- name: org.xmlunit:xmlunit-matchers
+  description: XMLUnit for Java Hamcrest Matchers
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/io/pom.xml
+  detection_source: io/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-09-30 12:58:00.000000000 Z
+- name: org.yaml:snakeyaml
+  description: YAML 1.1 parser and emitter for Java
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/stackshareio/pom-manipulation-ext/blob/main/io/pom.xml
+  detection_source: io/pom.xml
+  last_updated_by: Nick Cross
+  last_updated_on: 2020-09-30 12:58:00.000000000 Z
